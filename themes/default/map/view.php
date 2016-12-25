@@ -39,7 +39,7 @@
             $.ajax({
                 type: 'GET',
                 dataType: 'JSON',
-                url: '/?module=map&action=view&npc_id=' + id,
+                url: '?module=map&action=view&npc_id=' + id,
                 success: function(data){
                     $('.shop_' + id).toggleClass('hide');
                     $('#load_shop_' + id).hide();

@@ -28,6 +28,8 @@ try {
             throw new Flux_Error('db not found');
         }
         $items = $sth->fetchAll();
+    } else {
+        $items = array();
     }
 } catch(Exception $e){
     $npc = false;

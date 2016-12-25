@@ -176,6 +176,7 @@ if($files->get('npc_zip')) {
             $zip->close();
             $parse = new parse($server);
             $file = $parse->getFiles();
+            $parse->loadFiles($file);
             $successMessage = 'Successfull load ' . sizeof($file) . ' files';
         } else {
             $errorMessage = 'file must be ZIP ARCHIVE';
